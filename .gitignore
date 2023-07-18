@@ -1,0 +1,7 @@
+tmp/*
+!tmp/.gitkeep
+
+.idea
+.env
+src/.env
+src/vendor
