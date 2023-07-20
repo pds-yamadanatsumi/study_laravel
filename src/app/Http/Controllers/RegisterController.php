@@ -33,6 +33,5 @@ class RegisterController extends Controller
         event(new Registered($user));
 
         return view('regist.complete', compact('user'));
-
     }
 }
