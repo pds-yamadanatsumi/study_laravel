@@ -16,8 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/service-container',  [App\Http\Controllers\ServiceContainerController::class, 'index']);
 
+// １章
 Route::get('/register', [App\Http\Controllers\RegisterController::class, 'create'])
     ->middleware('guest')
     ->name('register');
@@ -30,4 +30,11 @@ Route::get('/login', [App\Http\Controllers\LoginController::class, 'index'])
 Route::get('/logout', [App\Http\Controllers\LoginController::class, 'logout'])
     ->middleware('auth')
     ->name('logout');
+
+// ２章
+Route::get('/service-container',  [App\Http\Controllers\ServiceContainerController::class, 'index']);
+
+// 3章
+Route::get('/purchase/{id}',  [App\Http\Controllers\PurchaseController::class, 'index']);
+Route::post('/purchase',  [App\Http\Controllers\PurchaseController::class, 'store']);
     

@@ -11,7 +11,6 @@ class ServiceContainerController extends Controller
 {
     public function index()
     {
-
         // 解決するたびにバインドのクロージャが実行されるため、常に新しいインスタンスが生成される
         $numcls = app()->make(Number::class,[0]);
         $numcls2 = app()->make(Number::class, [100]);
