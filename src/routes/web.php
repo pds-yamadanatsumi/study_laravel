@@ -37,4 +37,9 @@ Route::get('/service-container',  [App\Http\Controllers\ServiceContainerControll
 // 3章
 Route::get('/purchase/{id}',  [App\Http\Controllers\PurchaseController::class, 'index']);
 Route::post('/purchase',  [App\Http\Controllers\PurchaseController::class, 'store']);
+
+// 4章
+Route::get('/request',  [App\Http\Controllers\RequestController::class, 'index'])->name('request.index');
+Route::post('/request',  [App\Http\Controllers\RequestController::class, 'store'])->name('request.store');
+Route::get('/payload',  App\Http\Controllers\PayloadAction::class);
     

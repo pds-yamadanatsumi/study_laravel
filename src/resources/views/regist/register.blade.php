@@ -17,6 +17,17 @@
             </dd>
         </dl>
         <dl>
+            <dt>カテゴリー：</dt>
+            <dd>
+                <select name="category">
+                    <option value="red">赤</option>
+                    <option value="blue">青</option>
+                    <option value="yellow">黄色</option>
+                </select>
+                <span>{{ $errors->first('category') }}</span>
+            </dd>
+        </dl>
+        <dl>
             <dt>メールアドレス：</dt>
             <dd>
                 <input type="email" name="email" size="30"  />
