@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 
 class PurchaseController extends Controller
 {
+    private $service;
+    
     public function __construct(UserPurchaseService $service)
     {
         $this->service = $service;

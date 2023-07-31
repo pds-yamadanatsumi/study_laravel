@@ -14,7 +14,7 @@ const mix = require('laravel-mix');
     .js('resources/js/purchase.js', 'public/js')
     .autoload( {
         "jquery": [ '$', 'window.jQuery' ],
-    } )
+    })
     .postCss('resources/css/app.css', 'public/css', [
         //
     ]);

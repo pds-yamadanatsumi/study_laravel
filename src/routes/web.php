@@ -43,3 +43,5 @@ Route::get('/request',  [App\Http\Controllers\RequestController::class, 'index']
 Route::post('/request',  [App\Http\Controllers\RequestController::class, 'store'])->name('request.store');
 Route::get('/payload',  App\Http\Controllers\PayloadAction::class);
     
+// 5章
+Route::get('/db',  App\Http\Controllers\DBController::class);
